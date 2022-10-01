@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Begnis Valentin | Parcial 1 Laboratorio III</title>
+  <script src="./index.js" type="module" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <section class="form-datos_container">
+    <h2>Datos</h2>
+    <form id="form-datos">
+      <div>
+        <label for="select-datos">Filtrar Por:</label>
+        <select id="select-datos">
+          <option selected>Todos</option>
+          <option>Heroes</option>
+          <option>Villanos</option>
+        </select>
+      </div>
+      <div>
+        <label for="edad-promedio">Calcular Edad Promedio:</label>
+        <input id="edad-promedio" type="text" />
+        <input id="calcular" type="button" value="Calcular" />
+      </div>
+      <div>
+        <legend>Mostrar Columnas:</legend>
+        <div class="checkbox-container">
+          <input id="columna-id" class="cbox" type="checkbox" checked>ID</input>
+          <input id="columna-nombre" class="cbox" type="checkbox" checked>Nombre</input>
+          <input id="columna-apellido" class="cbox" type="checkbox" checked>Apellido</input>
+          <input id="columna-edad" class="cbox" type="checkbox" checked>Edad</input>
+          <input id="columna-alterEgo" class="cbox" type="checkbox" checked>AlterEgo</input>
+          <input id="columna-ciudad" class="cbox" type="checkbox" checked>Ciudad</input>
+          <input id="columna-publicado" class="cbox" type="checkbox" checked>Publicado</input>
+          <input id="columna-enemigo" class="cbox" type="checkbox" checked>Enemigo</input>
+          <input id="columna-robos" class="cbox" type="checkbox" checked>Robos</input>
+          <input id="columna-asesinatos" class="cbox" type="checkbox" checked>Asesinatos</input>
+        </div>
+      </div>
+      <div class="tabla-container">
+        <table id="tabla-personas">
+          <tr>
+            <th><input id="columna-id_header" class="tabla-header" type="button" value="ID"></th>
+            <th><input id="columna-nombre_header" class="tabla-header" type="button" value="Nombre"></th>
+            <th><input id="columna-apellido_header" class="tabla-header" type="button" value="Apellido"></th>
+            <th><input id="columna-edad_header" class="tabla-header" type="button" value="Edad"></th>
+            <th><input id="columna-alterEgo_header" class="tabla-header" type="button" value="AlterEgo"></th>
+            <th><input id="columna-ciudad_header" class="tabla-header" type="button" value="Ciudad"></th>
+            <th><input id="columna-publicado_header" class="tabla-header" type="button" value="Publicado"></th>
+            <th><input id="columna-enemigo_header" class="tabla-header" type="button" value="Enemigo"></th>
+            <th><input id="columna-robos_header" class="tabla-header" type="button" value="Robos"></th>
+            <th><input id="columna-asesinatos_header" class="tabla-header" type="button" value="Asesinatos"></th>
+          </tr>
+        </table>
+      </div>
+      <div class="agregar-container">
+        <input type="button" id="agregar" value="Agregar" />
+      </div>
+    </form>
+  </section>
+  <section class="form-abm_container">
+    <h2>ABM</h2>
+    <form id="form-abm">
+      <label for="id">
+        ID:
+        <input id="id" type="text" disabled />
+      </label>
+      <label for="nombre">
+        Nombre:
+        <input id="nombre" type="text" />
+      </label>
+      <label for="apellido">
+        Apellido:
+        <input id="apellido" type="text" />
+      </label>
+      <label for="edad">
+        Edad:
+        <input id="edad" type="text" />
+      </label>
+      <label for="select-abm">
+        Tipo:
+        <select id="select-abm">
+          <option>Heroe</option>
+          <option>Villano</option>
+        </select>
+      </label>
+      <label for="alterEgo">
+        AlterEgo:
+        <input id="alterEgo" type="text" />
+      </label>
+      <label for="ciudad">
+        Ciudad:
+        <input id="ciudad" type="text" />
+      </label>
+      <label for="publicado">
+        Publicado:
+        <input id="publicado" type="text" />
+      </label>
+      <label for="enemigo">
+        Enemigo:
+        <input id="enemigo" type="text" />
+      </label>
+      <label for="robos">
+        Robos:
+        <input id="robos" type="text" />
+      </label>
+      <label for="asesinatos">
+        Asesinatos:
+        <input id="asesinatos" type="text" />
+      </label>
+      <div class="botones">
+        <input id="alta" type="button" value="Alta">
+        <input id="modificar" type="button" value="Modificar">
+        <input id="eliminar" type="button" value="Eliminar">
+        <input id="cancelar" type="button" value="Cancelar">
+      </div>
+      <p class="mensaje-error"></p>
+    </form>
+  </section>
+</body>
+
+</html>
