@@ -186,7 +186,7 @@ function toggleColumnas(cbox) {
 
 function seleccionarFila(fila) {
   fila.id = 'clicked';
-  fila.style.backgroundColor = '#f17f3d';
+  fila.style.backgroundColor = '#15a515';
 
   const filas = Array.from(tablaPersonas.rows);
   filas.shift();
@@ -194,7 +194,7 @@ function seleccionarFila(fila) {
   filas.forEach(item => {
     if (item != fila) {
       item.id = '';
-      item.style.backgroundColor = '#383838';
+      item.style.backgroundColor = '#363636';
     }
   });
 }

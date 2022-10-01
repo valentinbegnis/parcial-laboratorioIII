@@ -23,7 +23,7 @@ section {
 
 .form-datos_container, .form-abm_container {
   padding: 20px;
-  border: 2px solid #f17f3d;
+  border: 2px solid #15a515;
   border-radius: 5px;
 }
 
@@ -45,6 +45,7 @@ input:focus {
 
 input, #select-datos, #calcular {
   padding: 2px;
+  border: none;
 }
 
 .checkbox-container {
@@ -59,7 +60,7 @@ input, #select-datos, #calcular {
 }
 
 .tabla-header {
-  background-color: #f17f3d;
+  background-color: #15a515;
   color: #f0f8ff;
   font-size: 18px;
 }
@@ -97,6 +98,19 @@ th input {
   flex-direction: column;
 }
 
+#form-abm label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.botones {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .mensaje-error {
   color: red;
 }
@@ -109,9 +123,12 @@ th input {
 #agregar {
   width: 85%;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #f0f8ff;
   padding: 4px;
   text-align: center;
   border-radius: 10px;
   height: 40px;
+  font-size: 16px;
+  background-color: #15a515;
+  color: #f0f8ff;
 }
